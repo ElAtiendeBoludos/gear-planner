@@ -9,6 +9,7 @@ export const Tomahawk: WarGcdAbility = {
     attackType: "Weaponskill",
     gcd: 2.5,
     cast: 0,
+    appDelay: 0.71,
 };
 
 export const HeavySwing: WarGcdAbility = {
@@ -19,6 +20,7 @@ export const HeavySwing: WarGcdAbility = {
     attackType: "Weaponskill",
     gcd: 2.5,
     cast: 0,
+    appDelay: 0.54,
     levelModifiers: [
         {
             minLevel: 84,
@@ -39,6 +41,7 @@ export const Maim: WarGcdAbility = {
     attackType: "Weaponskill",
     gcd: 2.5,
     cast: 0,
+    appDelay: 0.62,
     updateBeastGauge: (gauge: WarGauge) => gauge.beastGauge += 10,
     levelModifiers: [
         {
@@ -60,6 +63,7 @@ export const StormsPath: WarGcdAbility = {
     attackType: "Weaponskill",
     gcd: 2.5,
     cast: 0,
+    appDelay: 1.52,
     updateBeastGauge: (gauge: WarGauge) => gauge.beastGauge += 20,
     levelModifiers: [
         {
@@ -81,6 +85,7 @@ export const StormsEye: WarGcdAbility = {
     attackType: "Weaponskill",
     gcd: 2.5,
     cast: 0,
+    appDelay: 1.65,
     activatesBuffs: [SurgingTempest],
     updateBeastGauge: (gauge: WarGauge) => gauge.beastGauge += 10,
     levelModifiers: [
@@ -102,6 +107,7 @@ export const FellCleave: WarGcdAbility = {
     potency: 520,
     attackType: "Weaponskill",
     gcd: 2.5,
+    appDelay: 0.62,
     beastGaugeCost: 50,
     updateBeastGauge: gauge => gauge.beastGauge -= 50,
     levelModifiers: [
@@ -119,6 +125,7 @@ export const InnerChaos: WarGcdAbility = {
     potency: 700,
     attackType: "Weaponskill",
     gcd: 2.5,
+    appDelay: 0.94,
     beastGaugeCost: 50,
     updateBeastGauge: gauge => gauge.beastGauge -= 50,
 };
@@ -132,6 +139,7 @@ export const PrimalRend: WarGcdAbility = {
     attackType: "Weaponskill",
     activatesBuffs: [],
     gcd: 2.5,
+    appDelay: 1.16,
     levelModifiers: [
         {
             minLevel: 100,
@@ -147,6 +155,7 @@ export const PrimalRuination: WarGcdAbility = {
     potency: 800,
     attackType: "Weaponskill",
     gcd: 2.5,
+    appDelay: 1.06,
 };
 
 export const InnerRelease: WarOgcdAbility = {
@@ -154,6 +163,7 @@ export const InnerRelease: WarOgcdAbility = {
     name: "Inner Release",
     id: 7389,
     potency: null,
+    appDelay: 0,
     attackType: "Ability",
     activatesBuffs: [InnerReleaseBuff],
     cooldown: {
@@ -173,6 +183,7 @@ export const Infuriate: WarOgcdAbility = {
     name: "Infuriate",
     id: 52,
     potency: null,
+    appDelay: 0,
     attackType: "Ability",
     activatesBuffs: [],
     cooldown: {
@@ -194,6 +205,7 @@ export const PrimalWrath: WarOgcdAbility = {
     name: "Primal Wrath",
     id: 36924,
     potency: 700,
+    appDelay: 1.15,
     attackType: "Ability",
     cooldown: {
         time: 1,
@@ -205,6 +217,7 @@ export const Upheaval: WarOgcdAbility = {
     name: "Upheaval",
     id: 7387,
     potency: 400,
+    appDelay: 0.62,
     attackType: "Ability",
     cooldown: {
         time: 30,
@@ -222,6 +235,7 @@ export const Onslaught: WarOgcdAbility = {
     name: "Onslaught",
     id: 7386,
     potency: 150,
+    appDelay: 0.62,
     animationLock: 0.8,
     attackType: "Ability",
     cooldown: {
