@@ -230,7 +230,7 @@ export class WarSim extends BaseMultiCycleSim<WarSimResult, WarSettings, WarCycl
         totalTime: this.settings.fightTime,
         cycles: 0,
         which: 'totalTime',
-        cutoffMode: 'prorate-gcd',
+        cutoffMode: 'prorate-application',
     };
 
     constructor(settings?: WarSettingsExternal) {
